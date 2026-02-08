@@ -4,15 +4,15 @@
    ============================================ */
 
 :root {
-  --color-bg: #0f0f0f;
-  --color-surface: #1a1a1a;
-  --color-accent: #c96b2c;
-  --color-accent-light: #e08a4a;
+  --color-bg: #F7F1D8;
+  --color-surface: #efe9d0;
+  --color-accent: #A25E29;
+  --color-accent-light: #b8733a;
   --color-whatsapp: #25d366;
   --color-instagram: #e4405f;
-  --color-text: #f5f0e8;
-  --color-text-muted: #a09a8e;
-  --color-border: #2d2d2d;
+  --color-text: #2d2520;
+  --color-text-muted: #5a5247;
+  --color-border: #e0d9c0;
   --font-sans: 'Tajawal', -apple-system, BlinkMacSystemFont, sans-serif;
   --radius-sm: 8px;
   --radius: 12px;
@@ -61,7 +61,7 @@ body {
   border: 2px solid var(--color-accent);
   font-weight: 600;
   font-size: 0.9rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   min-height: var(--touch-min);
   transition: transform 0.2s, background 0.2s, color 0.2s;
 }
@@ -111,7 +111,7 @@ body.printing .whatsapp-float {
   max-height: 150px;
   width: auto;
   object-fit: contain;
-  filter: drop-shadow(0 2px 8px rgba(201, 107, 44, 0.3));
+  filter: drop-shadow(0 2px 8px rgba(162, 94, 41, 0.25));
 }
 
 .brand-name {
@@ -260,12 +260,12 @@ body.printing .whatsapp-float {
 
 .product-card:hover {
   border-color: var(--color-accent);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .product-image-placeholder {
   aspect-ratio: 4/3;
-  background: linear-gradient(135deg, var(--color-border) 0%, var(--color-bg) 100%);
+  background: linear-gradient(135deg, var(--color-border) 0%, var(--color-surface) 100%);
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
@@ -460,12 +460,12 @@ body.printing .whatsapp-float {
     page-break-inside: avoid;
   }
 
-  body { background: #0f0f0f !important; color: #f5f0e8 !important; }
-  .catalog-header { background: linear-gradient(180deg, #1a1a1a 0%, #0f0f0f 100%) !important; }
-  .product-card, .catalog-footer { background: #1a1a1a !important; }
-  .product-image-placeholder { background: linear-gradient(135deg, #2d2d2d 0%, #0f0f0f 100%) !important; }
-  .brand-name, .section-title, .product-price { color: #c96b2c !important; }
-  .product-card h3, .product-specs strong { color: #f5f0e8 !important; }
-  .product-specs, .catalog-footer p { color: #a09a8e !important; }
-  .intro-text { color: #f5f0e8 !important; }
+  body { background: #F7F1D8 !important; color: #2d2520 !important; }
+  .catalog-header { background: linear-gradient(180deg, #efe9d0 0%, #F7F1D8 100%) !important; }
+  .product-card, .catalog-footer { background: #efe9d0 !important; }
+  .product-image-placeholder { background: linear-gradient(135deg, #e0d9c0 0%, #efe9d0 100%) !important; }
+  .brand-name, .section-title, .product-price { color: #A25E29 !important; }
+  .product-card h3, .product-specs strong { color: #2d2520 !important; }
+  .product-specs, .catalog-footer p { color: #5a5247 !important; }
+  .intro-text { color: #2d2520 !important; }
 }
